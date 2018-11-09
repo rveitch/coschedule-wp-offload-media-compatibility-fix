@@ -2,7 +2,7 @@
 /*
 Plugin Name: CoSchedule -> WP Offload Media Compatibility Fix
 Plugin URI: https://github.com/rveitch/coschedule-wp-offload-media-compatibility-fix
-Description: Fixes a CoSchedule syncing compatibility issue with CoSchedule when using the WP Offload Media plugin
+Description: Fixes an image url syncing compatibility issue with CoSchedule when using the WP Offload Media plugin
 Author: Ryan Veitch
 Version: 1.0
 Author URI: http://veitchdigital.com/
