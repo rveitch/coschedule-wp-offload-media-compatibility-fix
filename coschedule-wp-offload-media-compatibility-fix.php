@@ -9,7 +9,7 @@ Author URI: http://veitchdigital.com/
 */
 
 /*
- * Fixes an data sync issue where CoSchedule post sync receives incorrect post content image urls
+ * Fixes a data sync issue where CoSchedule post sync receives incorrect post content image urls
  * that occurs when using the WP Offload Media plugin with the 'Remove Files From Server' option enabled.
  * The WordPress content still references the local file storage url, however the image will not be accessible
  * as WP Offload Media has deleted the local file. It appears to leave the db references intact due to an option
