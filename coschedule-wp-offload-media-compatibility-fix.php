@@ -8,10 +8,6 @@ Version: 1.0
 Author URI: http://veitchdigital.com/
 */
 
-if ( class_exists( 'TM_CoSchedule' ) ) {
-    add_filter( 'tm_coschedule_get_attachments_content', 'make_wp_offload_media_compatible_with_coschedule' );
-}
-
 /*
  * Fixes an data sync issue where CoSchedule post sync receives incorrect post content image urls
  * that occurs when using the WP Offload Media plugin with the 'Remove Files From Server' option enabled.
@@ -26,3 +22,4 @@ if ( class_exists( 'TM_CoSchedule' ) ) {
 function make_wp_offload_media_compatible_with_coschedule( $post_content ) {
     return apply_filters( 'the_content', $post_content );
 }
+add_filter( 'tm_coschedule_get_attachments_content', 'make_wp_offload_media_compatible_with_coschedule' );
